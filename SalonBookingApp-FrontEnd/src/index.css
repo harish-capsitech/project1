@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+
+body{
+  font-family: "Outfit", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #161a22;
+  /* overflow-x: hidden; */
+}
+h1, h2, p, a, button, span{
+  font-family: "Outfit", sans-serif;
+}
+.title{
+  font-family: "Outfit", sans-serif;
+}
+
+.ant-menu-item-selected {
+  background-color: #6c5ce7 !important;
+}
+
+.ant-menu-item-selected a {
+  color: #fff !important;
+}
+
+.ant-menu-item:hover {
+  background-color: #4b5563 !important;
+}
+.ant-menu-item a{
+  color: #dbd4d3 !important;
+}
+
+.dark-search .ant-input {
+  background: transparent !important;
+  color: #fff;
+  border-color: #444;
+  width: 200px;
+  margin-bottom: 25px;
+}
+
+.dark-search .ant-input::placeholder {
+  color: #aaa;
+}
+
+.dark-search .ant-input-search-button {
+  background: transparent;
+  border-color: #444;
+  color: #fff;
+}
+
+.dark-search .ant-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+.action-button{
+  color: rgb(255, 148, 148);
+}
+
+.action-button:hover{
+  color: rgb(252, 106, 106);
+}
