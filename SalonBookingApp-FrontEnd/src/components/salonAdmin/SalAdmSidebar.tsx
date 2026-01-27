@@ -12,7 +12,7 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
-const SuperAdminSidebar = () => {
+const SalAdmSidebar = () => {
   const location = useLocation();
 
   return (
@@ -43,24 +43,24 @@ const SuperAdminSidebar = () => {
           }}
           items={[
             {
-              key: "/superAdmin",
+              key: "/salonAdmin",
               icon: <DashboardOutlined style={{color: '#dbd4d3'}} />,
-              label: <NavLink to="/superAdmin">Dashboard</NavLink>,
+              label: <NavLink to="/salonAdmin">Dashboard</NavLink>,
             },
             {
-              key: "/superAdmin/salons",
+              key: "/salonAdmin/staff",
               icon: <ShopOutlined style={{color: '#dbd4d3'}} />,
-              label: <NavLink to="/superAdmin/salons">Salons</NavLink>,
+              label: <NavLink to="/salonAdmin/staff">Staff</NavLink>,
             },
             {
-              key: "/superAdmin/salonsReq",
+              key: "/salonAdmin/bookings",
               icon: <AppstoreOutlined style={{color: '#dbd4d3'}} />,
-              label: <NavLink to="/superAdmin/salonsReq">Requests</NavLink>,
+              label: <NavLink to="/salonAdmin/bookings">Bookings</NavLink>,
             },
             {
-              key: "/superAdmin/users",
+              key: "/salonAdmin/services",
               icon: <UserSwitchOutlined style={{color: '#dbd4d3'}}/>,
-              label: <NavLink to="/superAdmin/users">Users</NavLink>,
+              label: <NavLink to="/salonAdmin/services">Services</NavLink>,
             },
           ]}
         /> 
@@ -71,13 +71,13 @@ const SuperAdminSidebar = () => {
 
           <div>
             <span style={{ color: "#fff", fontSize: 16 }}>
-              Super Admin
+              Salon  Admin
             </span>
             <br />
             <span style={{ color: "#9ca3af", fontSize: 12 }}>Active Session</span>
           </div>
         </div>
-        <Link to='/superAdmin' className="text-red-400/50 bg-[#262b3a] rounded-xl flex items-center justify-center py-2">
+        <Link to='/salonAdmin' className="text-red-400/50 bg-[#262b3a] rounded-xl flex items-center justify-center py-2">
           <FontAwesomeIcon icon={faArrowRightFromBracket}/>
           Logout
         </Link>
@@ -86,4 +86,4 @@ const SuperAdminSidebar = () => {
   );
 };
 
-export default SuperAdminSidebar;
+export default SalAdmSidebar;

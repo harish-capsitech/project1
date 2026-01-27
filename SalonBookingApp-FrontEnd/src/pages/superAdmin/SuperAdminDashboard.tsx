@@ -5,11 +5,10 @@ import ColumnChart from "@ant-design/plots/es/components/column";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { superAdminDash, revenueData } from "../../utills/data";
 import { SalonDetails } from "../../utills/salons";
-// import type { SalonsDatatype } from "../../utills/salons";
 import { Content } from "antd/es/layout/layout";
 
 const columns = [
-  {
+  { 
     title: "Salon Name",
     dataIndex: "salonName",
     key: "salonName",
