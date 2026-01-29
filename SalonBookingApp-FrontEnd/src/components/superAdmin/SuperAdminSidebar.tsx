@@ -1,4 +1,4 @@
-import { Flex, Menu } from "antd";
+import { Menu } from "antd";
 import {
   ScissorOutlined,
   UserOutlined,
@@ -92,3 +92,4 @@ const SuperAdminSidebar = () => {
 };
 
 export default SuperAdminSidebar;
+
